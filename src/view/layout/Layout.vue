@@ -123,7 +123,8 @@ export default {
      * @returns {boolean}
      */
     contentFluid() {
-      return this.layoutConfig("content.width") === "fluid";
+      //return this.layoutConfig("content.width") === "fluid";
+      return true;
     },
 
     /**

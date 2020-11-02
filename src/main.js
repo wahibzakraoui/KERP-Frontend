@@ -31,6 +31,16 @@ import "@/core/plugins/metronic";
 import "@mdi/font/css/materialdesignicons.css";
 import "@/core/plugins/formvalidation";
 
+// Kendo UI
+import '@progress/kendo-ui'
+import '@progress/kendo-theme-default/dist/all.css';
+// Kendo Installer
+import { Grid, GridInstaller } from '@progress/kendo-grid-vue-wrapper'
+import { DataSource, DataSourceInstaller } from '@progress/kendo-datasource-vue-wrapper';
+// Init Kendo Installer
+Vue.use(GridInstaller);
+Vue.use(DataSourceInstaller);
+
 // API service init
 ApiService.init();
 
@@ -55,5 +65,7 @@ new Vue({
   store,
   i18n,
   vuetify,
+  Grid,
+  DataSource,
   render: h => h(App)
 }).$mount("#app");

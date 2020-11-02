@@ -41,9 +41,7 @@ export default {
 
       this.$emit(
         "language-changed",
-        this.languages.find(val => {
-          return val.lang === lang;
-        })
+        true
       );
 
       window.location.reload();

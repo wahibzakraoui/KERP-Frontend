@@ -113,7 +113,7 @@
     "style": "solid"
   },
   "content": {
-    "width": "fixed"
+    "width": "fluid"
   },
   "brand": {
     "self": {
